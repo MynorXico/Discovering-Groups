@@ -60,7 +60,7 @@ def printclust(clust, labels=None, n = 0):
     if clust.left != None: printclust(clust.left, labels=labels, n = n+1)
     if clust.right != None: printclust(clust.right, labels = labels, n = n+1)
 
-blognames,words,data = readfile('blogdata.txt')
+#blognames,words,data = readfile('blogdata.txt')
 #clust = hcluster(data)
 #rdata = clusters.rotatematrix(data)
 #worldclust = hcluster(rdata)
@@ -69,6 +69,10 @@ blognames,words,data = readfile('blogdata.txt')
 #clusters.drawdendrogram(clust, blognames, jpeg = 'blogclust.jpg')
 #print(blognames)
 
-kclust = clusters.kcluster(data, k=10)
+#kclust = clusters.kcluster(data, k=10)
 
-print([blognames[id] for id in kclust[5]])
+#print([blognames[id] for id in kclust[5]])
+
+wants, people, data = readfile('zebo.txt')
+clust = hcluster(data, distance=clusters.tanamoto)
+clusters.drawdendrogram(clust, wants, 'zebo.jpg')

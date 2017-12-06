@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7c1e72-176d-437b-bef0-0763e2aae2f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zebo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster.py" afterPath="$PROJECT_DIR$/cluster.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clusters.py" afterPath="$PROJECT_DIR$/clusters.py" />
     </list>
@@ -38,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clusters.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clusters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clusters.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,12 +69,19 @@
       <file leaf-file-name="cluster.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            <state relative-caret-position="323">
+              <caret line="66" column="69" lean-forward="false" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zebo.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zebo.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -117,9 +122,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/generatefeedvector.py" />
-        <option value="$PROJECT_DIR$/cluster.py" />
-        <option value="$PROJECT_DIR$/clusters.py" />
         <option value="$PROJECT_DIR$/zebo.txt" />
+        <option value="$PROJECT_DIR$/clusters.py" />
+        <option value="$PROJECT_DIR$/cluster.py" />
       </list>
     </option>
   </component>
@@ -312,16 +317,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zebo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -333,9 +328,24 @@
     <entry file="file://$PROJECT_DIR$/clusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="66" column="69" lean-forward="false" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zebo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

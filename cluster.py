@@ -62,5 +62,9 @@ def printclust(clust, labels=None, n = 0):
 
 blognames,words,data = readfile('blogdata.txt')
 clust = hcluster(data)
-clusters.drawdendrogram(clust, blognames, jpeg = 'blogclusg.jpg')
+rdata = clusters.rotatematrix(data)
+worldclust = hcluster(rdata)
+clusters.drawdendrogram(worldclust, labels=words, jpeg='wordclust.jpg')
+
+clusters.drawdendrogram(clust, blognames, jpeg = 'blogclust.jpg')
 #print(blognames)

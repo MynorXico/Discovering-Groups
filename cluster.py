@@ -61,10 +61,14 @@ def printclust(clust, labels=None, n = 0):
     if clust.right != None: printclust(clust.right, labels = labels, n = n+1)
 
 blognames,words,data = readfile('blogdata.txt')
-clust = hcluster(data)
-rdata = clusters.rotatematrix(data)
-worldclust = hcluster(rdata)
-clusters.drawdendrogram(worldclust, labels=words, jpeg='wordclust.jpg')
+#clust = hcluster(data)
+#rdata = clusters.rotatematrix(data)
+#worldclust = hcluster(rdata)
+#clusters.drawdendrogram(worldclust, labels=words, jpeg='wordclust.jpg')
 
-clusters.drawdendrogram(clust, blognames, jpeg = 'blogclust.jpg')
+#clusters.drawdendrogram(clust, blognames, jpeg = 'blogclust.jpg')
 #print(blognames)
+
+kclust = clusters.kcluster(data, k=10)
+
+print([blognames[id] for id in kclust[5]])

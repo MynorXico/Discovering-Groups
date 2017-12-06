@@ -1,5 +1,6 @@
 from clusters import pearson
 from clusters import readfile
+import clusters
 import sys
 class bicluster:
     def __init__(self, vec, left = None, right= None, distance = 0.0, id = None):
@@ -61,5 +62,5 @@ def printclust(clust, labels=None, n = 0):
 
 blognames,words,data = readfile('blogdata.txt')
 clust = hcluster(data)
-printclust(clust, labels = blognames)
+clusters.drawdendrogram(clust, blognames, jpeg = 'blogclusg.jpg')
 #print(blognames)

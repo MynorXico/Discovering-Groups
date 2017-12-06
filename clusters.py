@@ -32,3 +32,14 @@ def pearson(v1, v2):
     den = sqrt((sum1Sq-pow(sum1, 2)/len(v1))*(sum2Sq-pow(sum2, 2)/len(v1)))
     if den == 0: return 0
     return 1.0-num/den
+
+from PIL import Image, ImageDraw
+
+def getheight(clust):
+    # Is this and endpoint? Then the height is just 1
+    if clust.left == None and clust.right == None: return 1
+
+    # Otherwise the height is the same of the height of
+    # each branch
+    return getheight(clust.left) + getheight(clust.right)
+

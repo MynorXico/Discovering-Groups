@@ -44,7 +44,7 @@ for feedurl in open('feedlist.txt'):
 wordlist = []
 for w, bc in apcount.items():
     frac = float(bc)/len(wordcounts)
-    if frac > 0.1 and frac < 0.5: wordlist.append(w)
+    if frac > 0.1 and frac < 0.9: wordlist.append(w)
 
 out = open('blogdata.txt', 'w')
 out.write('Blog')

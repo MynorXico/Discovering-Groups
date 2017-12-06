@@ -73,6 +73,10 @@ def printclust(clust, labels=None, n = 0):
 
 #print([blognames[id] for id in kclust[5]])
 
-wants, people, data = readfile('zebo.txt')
-clust = hcluster(data, distance=clusters.tanamoto)
-clusters.drawdendrogram(clust, wants, 'zebo.jpg')
+#wants, people, data = readfile('zebo.txt')
+#clust = hcluster(data, distance=clusters.tanamoto)
+#clusters.drawdendrogram(clust, wants, 'zebo.jpg')
+
+blognames, words, data = readfile('blogdata.txt')
+coords = clusters.scaledown(data)
+clusters.draw2d(coords, blognames, jpeg='blogs2d.jpg')

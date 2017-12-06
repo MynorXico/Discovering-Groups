@@ -188,5 +188,14 @@ def scaledown(data, distance=pearson, rate = 0.01):
         # Move each of the points by the learning rate times the gradient
         for k in range(n):
             loc[k][0] -= rate*grad[k][0]
-            loc[k][1]-=rate*grad[k][1]
+            loc[k][1] -=rate*grad[k][1]
     return loc
+
+def draw2d(data, labels, jpeg='mds2d.jpg'):
+    img = Image.new('RGB', (2000, 2000), (255, 255, 255))
+    draw = ImageDraw.Draw(img)
+    for i in range(len(data)):
+        x = (data[i][0]+0.5)*1000
+        y = (data[i][1]+0.5)*1000
+        draw.text((x, y), labels[i], (0,0,0))
+    img.save(jpeg, 'JPEG')
